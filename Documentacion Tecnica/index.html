@@ -1,0 +1,385 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Documentación Técnica</title>
+</head>
+<body>
+    <nav class="navmenu"id="navbar">
+        <header id="header-title">CMD <br> Terminal</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduccion">Introducción</a></li>
+          <li><a class="nav-link" href="#Antes_de_comenzar">Antes de comenzar</a></li>
+          <li><a class="nav-link" href="#CMD_vs_Terminal">CMD vs Terminal</a></li>
+          <li><a class="nav-link" href="#CMD">Lista de comandos CMD</a></li>
+          <li><a class="nav-link" href="#Terminal">Lista de comandos Terminal</a></li>
+          <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+          <header>Introduccion</header>
+          <article>
+               <p>El objetivo del presente documento, es darte una introducción a la gestión de sistemas atraves de las consolas de Windows y Linux.
+               </p>
+               <p>Vamos a aprender los comandos necesarios para:
+               </p>
+                   <ul>
+                     <li>Ingresar a directorios.</li>
+                     <li>Movernos por carpetas.</li>
+                     <li>Crear archivos y directorios.</li>
+                     <li>Modificar nombres de archivos y directorios.</li>
+                     <li>Eliminar archivos y directorios.</li>
+                   </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Antes_de_comenzar">
+          <header>Antes de comenzar</header>
+          <article>
+            <p>Vamos a preparar nuestro espacio de trabajo, si estas utilizando Windows: </p>
+            <ul>
+               <li>Presionamos la tecla de windows.</li>
+               <li>Buscamos Simbolo del sistema o CMD.</li>
+               <li>Click derecho, abrir como administrador.</li>
+               <li>Accedemos a la consola.</li>
+            </ul>
+            <p>Una vez abierta, estaremos situados en el directorio por defecto: (en este caso...)</p>
+            <code>C:\WINDOWS\system32></code>
+
+            <p>Si estas utilizando Linux: </p>
+            <ul> 
+               <li>Presionamos la tecla de windows.</li>
+               <li>Buscamos Simbolo del sistema o CMD.</li>
+               <li>Click derecho, abrir como administrador.</li>
+               <li>Accedemos a la consola.</li>
+            </ul>
+            <p>Una vez abierto, estaremos situados en el directorio por defecto: (en este caso...)</p>
+            <code></code>
+          </article>
+        </section>
+        <section class="main-section" id="CMD_vs_Terminal">
+          <header>Ampliá los conocimientos</header>
+          <article>
+            <p>
+              Para obtener ayuda sobre los comandos en CMD y Terminal. Escribir "help" + "comando" (sin comillas). Esto enlista la descripcion del comando y sus usos.
+              <br>
+              <code>D:\Videos>help rd</code>
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="CMD">
+            <table class="cmd_table"id="cmd_table">
+                <caption id="caption">Lista de comandos CMD en Windows (MS-DOS)</caption>
+                <thead class="table-th"id="table-th">
+                   <tr>
+                      <th>Comando</th>
+                      <th>Funcionalidad</th>
+                   </tr>
+                </thead>
+                <tbody class="tbody"id="table-th">
+                   <tr>
+                      <td>CD</td>
+                      <td>Muestra el nombre del directorio actual o cambia a otro directorio.
+                        <br>
+                        <code>C:\WINDOWS\system32>cd</code>
+                        <br>
+                        Vuelve al directorio anterior.
+                        <br>
+                        <code>C:\WINDOWS\system32>cd ..</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>CHDIR</td>
+                      <td>Muestra el nombre del directorio actual o cambia a otro directorio.
+                        <br>
+                        <code>C:\Windows>chdir /d d:/videos</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>CHKDSK</td>
+                      <td>Comprueba un disco y muestra un informe de su estado.
+                        <br> 
+                        <code>C:\Windows>chkdsk</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>CLS</td>
+                      <td>Borra la pantalla.</td>
+                   </tr>
+                   <tr>
+                      <td>COPY</td>
+                      <td>Copia uno o más archivos a otro lugar (en otra ubicación).
+                         <br>
+                        <code>D:\Carpeta>copy "MICHAEL S. PERALTA - eng.png" d:\msp.png</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>DATE</td>
+                      <td>Muestra o establece la fecha.
+                         <br>
+                         <code>D:\Carpeta>date</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>DEL</td>
+                      <td>Elimina uno o más archivos.
+                         <br>
+                      <code>D:\>del aaa.png</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>DIR</td>
+                      <td>Muestra una lista de archivos y subdirectorios en un directorio.
+                         <br>
+                         <code>D:\dir</code>
+                         <br>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>EXIT</td>
+                      <td>Sale del programa <strong>cmd.exe</strong> (intérprete de comandos).</td>
+                   </tr>
+                      <td>FIND</td>
+                      <td>Busca una cadena de texto en uno o más archivos.</td>
+                   </tr>
+                   <tr>
+                      <td>FINDSTR</td>
+                      <td>Busca cadenas de texto en archivos.
+                         <br>
+                         <code>D:\Cv>find "Michael" "MICHAEL S. PERALTA - eng.png"</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>FORMAT</td>
+                      <td>Formatea un disco para usarse con Windows.
+                         <br>
+                         <code>D:/format</code>
+                      </td>
+                   </tr>
+                      <td>HELP</td>
+                      <td>Proporciona información de ayuda para los comandos Windows. Se puede realizar una busqueda especifica del comando, escribiendo "Help" seguido del comando "cd".
+                         <br>
+                         <code>D:\>help</code>
+                         <br>
+                         <code>D:\>help cd</code>
+                      </td>
+                   </tr>
+                      <td>MD</td>
+                      <td>Crea un directorio.
+                         <br>
+                         <code>D:\>md Capacitacion</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>MOVE</td>
+                      <td>Mueve uno o más archivos de un directorio a otro. 
+                         <br>
+                         <code>D:\>move Capacitacion d:\videos</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>RD</td>
+                      <td>Elimina un directorio.
+                      <br>
+                      <code></code>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>RMDIR</td>
+                     <td>Elimina (quita) un directorio.</td>
+                     </tr>
+                   <tr>
+                      <td>RENAME</td>
+                      <td>Cambia el nombre de uno o más archivos.
+                         <br>
+                         <code>D:/rename NuevoNombre</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>REPLACE</td>
+                      <td>Reemplaza archivos.
+                         <br>
+                         <code></code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>SHUTDOWN</td>
+                      <td>Permite el apagado local o remoto de un equipo.</td>
+                   </tr>
+                   <tr>
+                      <td>TASKKILL</td>
+                      <td>Termina o interrumpe un proceso o aplicación que se está ejecutando.</td>
+                   </tr>
+                   <tr>
+                      <td>TASKLIST</td>
+                      <td>Muestra todas las tareas en ejecución, incluidos los servicios.</td>
+                   </tr>
+                   <tr>
+                      <td>TIME</td>
+                      <td>Muestra o establece la hora del sistema.</td>
+                   </tr>
+                      <td>TREE</td>
+                      <td>Muestra gráficamente la estructura de directorios de una unidad o ruta de acceso.</td>
+                   </tr>
+                   <tr>
+                      <td>TYPE</td>
+                      <td>Muestra el contenido de uno o más archivos de texto (<em>.bat</em>, <em>.txt</em>,...).</td>
+                   </tr>
+                   <tr>
+                      <td>VER</td>
+                      <td>Muestra la versión de Windows.</td>
+                   </tr>
+                   <tr>
+                      <td>VOL</td>
+                      <td>Muestra la etiqueta del volumen y el número de serie del disco.</td>
+                   </tr>
+                   <tr>
+                      <td>XCOPY</td>
+                      <td>Copia archivos y árboles de directorios.</td>
+                   </tr>
+                </tbody>
+             </table>
+        </section>
+        <section class="main-section" id="Terminal">
+            <table class="cmd_table"id="cmd_table">
+                <caption id="caption">Lista de comandos Teminal - Linux</caption>
+                <thead class="table-th"id="table-th">
+                   <tr>
+                      <th>Comando</th>
+                      <th>Funcionalidad</th>
+                   </tr>
+                </thead>
+                <tbody class="tbody"id="table-th">
+                   <tr>
+                      <td>CAT</span></a></td>
+                      <td>Cat (de concatenar), nos permite visualizar el contenido de un archivo de texto.
+                        <br>
+                        <code>$ cat mv36_AlarmsExp.log</code>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>ZCAT</span></a></td>
+                     <td>Nos permite visualizar el contenido de un archivo comprimido
+                       <br>
+                       <code>$ zcat mv36_AlarmsExp.log.diario.2019-09-0* </code></td>
+                  </tr>
+                  <tr>
+                     <td>GREP</span></a></td>
+                     <td>Nos permite concatenar opciones especificas, para realizar un filtrado especifico. En este ejemplo, dentro del archivo .log, se van a mostrar unicamente los datos que contengan "TAP_FILTER"
+                       <br>
+                       <code>$ zcat mv36_AlarmsExp.log.diario.2019-09-0* | grep "TAP_FILTER"</code>
+                     <br>
+                     En este ejemplo, dentro del archivo .log, se van a mostrar unicamente los datos que <b>NO</b> contengan "TAP_FILTER"
+                     <br>
+                     <code>$ zcat mv36_AlarmsExp.log.diario.2019-09-0* | grep -v "TAP_FILTER"</code> 
+                     <br>
+                     -i Utilizado para que no distinga mayusculas y minusculas.
+                     <br>
+                     <code>$ zcat mv36_AlarmsExp.log.diario.2019-09-0* | grep -v -i "TAP_FILTER"</code> 
+                     </td>
+                     </tr>
+                   <tr>
+                      <td>LS</td>
+                      <td>Ls (de listar), permite listar el contenido de un directorio o fichero. La sintaxis es:
+                        <br>
+                        <code>$ ls /home/directorio</code>
+                        <br>
+                        El comando ls tiene varias opciones que permiten organizar la salida. Por ejemplo, podes usar <b>-a</b> para mostrar los archivos ocultos y <b>-l</b> para mostrar los usuarios, permisos y la fecha de los archivos. En los comandos Linux, estas opciones pueden combinarse, terminando en algo como:
+                        <br>
+                        <code>$ ls -la /home/directorio</code></td>
+                   </tr>
+                   <tr>
+                      <td>CD</td>
+                      <td>Cd (de cambiar directorio), comando necesario para acceder a una ruta distinta de la que te encuentras. Por ejemplo, si estas en el directorio /home y deseas acceder a /home/ejercicios, seria:
+                        <br>
+                        <code>$ cd /home/ejercicios</code>
+                        <br>
+                        Si estás en /home/ejercicios y deseas subir un nivel (es decir ir al directorio /home), ejecutas:
+                        <br>
+                        <code>$ cd ..</code></td>
+                   </tr>
+                   <tr>
+                      <td>TOUCH</td>
+                      <td>Touch crea un archivo vacío, si el archivo existe actualiza la hora de modificación. Para crear el archivo prueba1.txt en /home, seria:
+                        <br>
+                        <code>$ touch /home/prueba1.txt</code></td>
+                   </tr>
+                   <tr>
+                      <td>MKDIR</td>
+                      <td>Mkdir (de make directory o crear directorio), crea un directorio nuevo tomando en cuenta la ubicación actual. Por ejemplo, si estas en /home y deseas crear el directorio ejercicios, sería:
+                        <br>
+                        <code>$ mkdir /home/ejercicios</code>
+                        <br>
+                        Mkdir tiene una opción bastante útil que permite crear un árbol de directorios completo que no existe. Para eso usamos la opción -p:
+                        <br>
+                        <code>$ mkdir -p /home/ejercicios/prueba/uno/dos/tres</code>
+
+                  </td>
+                   </tr>
+                   <tr>
+                      <td>CP</td>
+                      <td>Cp (de copy o copiar), copia un archivo o directorio origen a un archivo o directorio destino. Por ejemplo, para copiar el archivo prueba.txt ubicado en /home a un directorio de respaldo, podemos usar:
+                        <br>
+                        <code>$ cp /home/prueba.txt /home/respaldo/prueba.txt</code>
+                        <br>
+                        En la sintaxis siempre se especifica primero el origen y luego el destino. Si indicamos un nombre de destino diferente, cp copiará el archivo o directorio con el nuevo nombre.
+                        El comando también cuenta con la opción -r que copia no sólo el directorio especificado sino todos sus directorios internos de forma recursiva. Suponiendo que deseamos hacer una copia del directorio /home/ejercicios que a su vez tiene las carpetas ejercicio1 y ejercicio2 en su interior, en lugar de ejecutar un comando para cada carpeta, ejecutamos:
+                        <br>
+                        <code>$ cp -r /home/ejercicios /home/respaldos/</code>
+                     </td>
+                   </tr>
+                   <tr>
+                      <td>MV</td>
+                      <td>Mv (de move o mover), mueve un archivo a una ruta específica, y a diferencia de cp, lo elimina del origen finalizada la operación. Por ejemplo:
+                        <br>
+                        <code>$ mv /home/prueba.txt /home/respaldos/prueba2.txt</code>
+                        <br>
+                        Al igual que cp, en la sintaxis se especifica primero el origen y luego el destino. Si indicamos un nombre de destino diferente, mv moverá el archivo o directorio con el nuevo nombre.
+                     </td>
+                   </tr>
+                   <tr>
+                      <td>RM</td>
+                      <td>RM (de remove o remover), es el comando necesario para borrar un archivo o directorio. Para borrar el archivo prueba.txt ubicado en /home, ejecutamos:
+                        <br>
+                        <code>$ rm /home/prueba.txt</code>
+                        <br>
+                        Este comando también presenta varias opciones. La opción -r borra todos los archivos y directorios de forma recursiva. Por otra parte, -f borra todo sin pedir confirmación. Estas opciones pueden combinarse causando un borrado recursivo y sin confirmación del directorio que se especifique. Para realizar esto en el directorio respaldos ubicado en el /home, usamos:
+                        <br>
+                        <code>$ rm -fr /home/respaldos</code>
+                        <br>
+                        Este comando es muy peligroso, por lo tanto es importante que nos documentemos bien acerca de los efectos de estas opciones en nuestro sistema para así evitar consecuencias nefastas.
+                        </td>
+                   </tr>
+                   <tr>
+                      <td>PWD</td>
+                      <td>Pwd (de print working directory o imprimir directorio de trabajo), es un conveniente comando que imprime nuestra ruta o ubicación al momento de ejecutarlo, así evitamos perdernos si estamos trabajando con múltiples directorios y carpetas. Su sintaxis seria:
+                        <br>
+                        <code>$ pwd</code>
+                        </td>
+                   </tr>
+                   <tr>
+                      <td>TAIL</td>
+                      <td>Escuchar .log en tiempo real.
+                         <br>
+                         <code>tail -f alcatel_nm_AlarmsExport.log</code>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>CLEAR</td>
+                      <td>Clear (de limpiar), es un sencillo comando que limpiara nuestra terminal por completo dejándola como recién abierta. Para ello ejecutamos:
+                        <br>
+                         <code>$ clear</code>
+                        <br>
+                        Como bonus les recomiendo utilizar man que muestra una documentación completa de todos los comandos. Para clear, por ejemplo:
+                        <br>
+                        <code>$ man clear</code></td>
+                   </tr>
+                   
+                </tbody>
+             </table>
+        </section>
+      </main>
+</body>
+</html>

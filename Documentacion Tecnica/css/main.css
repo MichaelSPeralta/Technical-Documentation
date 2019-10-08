@@ -1,0 +1,136 @@
+html,
+body {
+  min-width: 350px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-color: #36438d;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .7);
+  z-index: 1;
+}
+
+header {
+  color: #1b1919;
+  margin: 30px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#header-title{
+  color: #ffffff;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+}
+
+#navbar li {
+  display: block;
+  color: #36438d;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li a:hover{
+  background-color: #242f6d;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #52534d;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: inline-block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#cmd_table{
+border-collapse:collapse;
+text-align:left;
+margin-bottom: 1em;
+margin-left:.75em;
+margin-right:.75em;
+margin-top:.7em;
+width:95%;
+width:-moz-calc(100% - 23px);
+width:-webkit-calc(100% - 23px);
+width:calc(100% - 23px);
+}
+
+#caption {
+    background-color:#f5f5ff;
+    border:0em solid #aac;
+    border-left:1px solid #aac;
+    border-right:1px solid #aac;
+    border-top:1px solid #aac;
+    color:rgb(74, 74, 196);
+    font-size:1.05em;
+    font-weight:bold;
+    padding:8px;
+    }
+
+#table-th {
+    background-color:#e9e5e51c;
+    border:0em solid #aac;
+    border-left:1px solid #aac;
+    border-right:1px solid #aac;
+    border-top:1px solid #aac;
+    border-bottom:1px solid #aac;
+    font-size:1.05em;
+    padding:8px;
+    }
+    
+tr, td, th{
+    padding: 12px;
+    }
